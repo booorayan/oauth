@@ -1,3 +1,4 @@
+from django.shortcuts import render
 from rest_framework import generics
 from rest_framework import permissions
 from rest_framework import status
@@ -53,3 +54,7 @@ class OrderDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = OrderSerializer
     authentication_classes = (SessionAuthentication, OIDCAuthentication)
     permission_classes = [permissions.IsAuthenticated]
+
+
+def LoginView(request):
+    return render(request, 'registration/login.html')

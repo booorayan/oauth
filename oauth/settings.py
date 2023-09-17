@@ -152,7 +152,7 @@ OIDC_OP_USER_ENDPOINT = env('USER_ENDPOINT')
 OIDC_RP_SIGN_ALGO = env('RP_SIGN_ALGO')
 OIDC_OP_JWKS_ENDPOINT = env('JWKS_ENDPOINT')
 
-LOGIN_REDIRECT_URL = "http://localhost:8000/api"
+LOGIN_REDIRECT_URL = "http://localhost:8000/api/customers"
 LOGOUT_REDIRECT_URL = "http://localhost:8000/api"
 
 
